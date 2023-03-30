@@ -1999,12 +1999,12 @@ input, select, textarea {
 		}
 
 		.wrapper.style2 {
-			background-color: #fafafa;
+			background-color: #585353;
 			text-shadow: 1px 1px 0px #fff;
 		}
 
 		.wrapper.style3 {
-			background-color: #f4f4f4;
+			background-color: #23302d;
 			text-shadow: 1px 1px 0px #fff;
 		}
 
@@ -2443,3 +2443,11 @@ input, select, textarea {
 					}
 
 	}
+
+.carouselControlBtn {
+	box-shadow: none;
+}
+
+.noShadowText {
+	text-shadow: none;
+}
