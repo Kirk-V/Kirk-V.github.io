@@ -44,11 +44,3 @@
           transform: rotatey(-180deg);
     display: none !important;
 }
-
-.card {
-    height: 50%;
-}
-
-.cardtext {
-    height: 40%;
-}
