@@ -63,10 +63,10 @@
 						</p>
 						<a href="#work" class="btn large scrolly bg-body text-bg-info noShadowText">Learn about what I
 							do</a>
-						
+
 					</div>
 				</div>
-				
+
 				<div class="row d-none d-md-flex h-25 align-items-end justify-content-center mb-auto">
 					<div class="col-sm-1 rounded">
 						<div class="bg-light p-2">
@@ -111,7 +111,8 @@
 		</article>
 
 		<!-- Work -->
-		<article id="work" class="wrapper style2 pt-5" style="scroll-snap-align: start; background-color: rgb(211, 207, 203); min-height: 100%;">
+		<article id="work" class="wrapper style2 pt-5"
+			style="scroll-snap-align: start; background-color: rgb(211, 207, 203); min-height: 100%;">
 			<div class="container h-100">
 				<div class="row justify-content-center mb-3">
 					<div class="col-md-12 justify-content-center">
@@ -122,7 +123,7 @@
 					<div class="col-sm-2 p-4 d-none d-md-block">
 						<img class="img-fluid" src="images/img_icon/Stacked.png" />
 					</div>
-					<div class="col-12 col-md-10 pt-5" style="border: 5px solid black">
+					<div class="col-12 col-md-10 pt-5" style="border: 5px solid black; border-radius: 10px;">
 						<div class="row">
 							<div class="col-sm-4">
 								<h4 class="text-center">
@@ -144,7 +145,7 @@
 
 
 				<div class="row justify-content-end w-100 h-25 mb-4">
-					<div class="col-12 col-sm-12 col-md-10" style="border: 5px solid rgb(5, 80, 34)">
+					<div class="col-12 col-sm-12 col-md-10" style="border: 5px solid rgb(5, 80, 34);border-radius: 10px;">
 						<div class="row">
 							<div class="col-sm-8 order-1">
 								<p>
@@ -167,7 +168,7 @@
 					<div class="col-sm-2 p-4 d-none d-md-block">
 						<!-- img -->
 					</div>
-					<div class="col-12 col-sm-12 col-md-10" style="border: 5px solid #500505">
+					<div class="col-12 col-sm-12 col-md-10" style="border: 5px solid #500505;border-radius: 10px;">
 						<div class="row">
 							<div class="col-sm-4">
 								<h4>Client Support</h4>
@@ -207,7 +208,7 @@
 
 					<!-- card 1 -->
 					<div class="col-sm-12 col-md-6 col-lg-4 pb-4  flip">
-						<div class="card  h-100">
+						<div class="card border-light text-bg-dark h-100">
 							<h5 class="card-header card-title">Chubb Hub</h5>
 							<div class="flipCard h-100">
 								<div class="face front h-100 w-100">
@@ -234,25 +235,39 @@
 												<span class="visually-hidden">Next</span>
 											</button>
 										</div>
-										<div class="cardtext text-light" style="max-height: 50%;">Building security is at the forefront of concerns for SSTS
-											staff. Managing security access to various parts of the building is
-											dependant on many factors like user position, course-enrollement, time of
-											day etc). Chubb Hub was developed to replace time-consuming manual
-											management of users with a speedy, intuitive desktop app. Chubb hub has
+										<div class="cardtext text-light" style="max-height: 50%;">Building security is
+											at the forefront of concerns for SSTS
+											staff who manage security access to multiple buildings. Chubb Hub was developed to replace time-consuming manual
+											management of security groups and settings with a speedy, intuitive desktop app. Chubb hub has
 											enabled quick management of thousands of users, integrating with the
 											standard UWO security system.
 										</div>
-										<div class="flipBtnDiv">
-											<button type="button" class="btn btn-primary float-end flipBtn">How It's
-												Made</button>
+										<div class="flipBtnDiv card-footer p-0 mt-auto">
+											<button type="button" class="btn btn-primary float-end flipBtn">
+												How It's Made
+											</button>
 										</div>
 									</div>
 								</div>
 								<div class="face back h-100 w-100">
-									<div class="card-body h-100">
-										<div class="h-50">img</div>
-										<div class="cardtext">text</div>
-										<div class="flipBtnDiv">
+									<div class="card-body bg-black h-100">
+										<div style="height: 35%;">
+											<h6>Languages and Tools</h6>
+											<ul>
+												<li>C#</li>
+												<li>XAML</li>
+												<li>Dotnet core 6</li>
+												<li>WPF</li>
+												<li>MVVM</li>
+											</ul>
+										</div>
+										<div class="cardtext">
+											<h6>Design Decisions</h6>
+											<p>
+												As the need was for a dekstop application, WPF was an appropriate choice. This application is designed with the MVVM pattern. The architecture allows for incremental improvements and future modification which is a requirement of the project. The object oriented back-end is devouple from the front end by using bindings in a view-model layer.
+											</p>
+										</div>
+										<div class="flipBtnDiv card-footer p-0 mt-auto">
 											<button type="button"
 												class="btn btn-primary float-end flipBtn">Back</button>
 										</div>
@@ -266,7 +281,7 @@
 
 					<!-- card 2 -->
 					<div class="col-sm-12 col-md-6 col-lg-4 pb-4 flip">
-						<div class="card  h-100">
+						<div class="card border-light text-bg-dark h-100">
 							<h5 class="card-header card-title">Autonomous Exploration</h5>
 							<div class="flipCard h-100">
 								<div class="face front h-100 w-100">
@@ -275,8 +290,12 @@
 												width="100%" height="100%">
 												<source src="images/drone.mp4" type="video/mp4" />
 											</video></div>
-										<div class="cardtext">text</div>
-										<div class="flipBtnDiv">
+										<div class="cardtext">
+											This application allows micro-UAVs to venture into confined, underground areas without any previous knowledge of the environment. Without any need for external positioning information, like GPS, this system is truly autonomous and can be deployed anywhere.
+										</div>
+										<div class="cardtext mt-2">
+											<li>Featured on <a href="https://mobilesyrup.com/2022/08/25/5g-and-the-future-of-drones/?fbclid=IwAR0rbeJas-PG_IDHfTLBUjkxHi2_MMbft_67j5fqN3qZNGUQqqPi0elV6oo">BBC Earth</a></div></li>
+										<div class="flipBtnDiv card-footer p-0 mt-auto">
 											<button type="button" class="btn btn-primary float-end flipBtn">How It's
 												Made</button>
 										</div>
@@ -284,10 +303,21 @@
 								</div>
 								<div class="face back h-100 w-100">
 									<div class="card-body h-100 bg-black">
-										<div class="cardtext">Some quick example text to build on the card title and
-											make
-											up the bulk of the card's content.t</div>
-										<div class="flipBtnDiv">
+										<div >
+											<h6>Languages and Tools</h6>
+											<ul>
+												<li>C</li>
+												<li>Python (pyqt)</li>
+												<li>Crazyflie</li>
+												<li>FreeRtos</li>
+											</ul>
+										</div>
+										<div class="cardtext">
+											<h6>Design and Decisions</h6>
+											<p>
+												To make this system autonomous, it is embedded within the firmware of a CrazyFlie quadcopter. When the application starts a memory efficient mapping and frontier detection system are combined to encourage the UAV to explore by travelling to regions of space yet to be explored. The map provides a way to track where the drone has already been and provides paths to new areas yet to be explored. Frontier detection is responsible for discovering regions that the drone must fly to in order to continue exploration.											</p>
+										</div>
+										<div class="flipBtnDiv card-footer p-0 mt-auto">
 											<button type="button"
 												class="btn btn-primary float-end flipBtn">Back</button>
 										</div>
@@ -300,7 +330,7 @@
 
 					<!-- card 3 -->
 					<div class="col-sm-12 col-md-6 col-lg-4 pb-4 flip">
-						<div class="card  h-100">
+						<div class="card border-light text-bg-dark h-100">
 							<h5 class="card-header card-title">Movie Star Classifier</h5>
 							<div class="flipCard h-100">
 								<div class="face front h-100 w-100">
@@ -326,8 +356,13 @@
 												<span class="visually-hidden">Next</span>
 											</button>
 										</div>
-										<div class="cardtext">text</div>
-										<div class="flipBtnDiv">
+										<div class="cardtext">
+											Movie star classifier is a Web-based tool to classify movie stars within a
+											user uploaded scene of a movie. After selecting a scene the frames are analyzed by
+											the back end running through two deep neural networks to first detect faces and then to classify them.
+											
+										</div>
+										<div class="flipBtnDiv card-footer p-0">
 											<button type="button" class="btn btn-primary float-end flipBtn">How It's
 												Made</button>
 										</div>
@@ -335,9 +370,24 @@
 								</div>
 								<div class="face back h-100 w-100">
 									<div class="card-body h-100 bg-black">
-										<div class="h-50">img</div>
-										<div class="cardtext">text</div>
-										<div class="flipBtnDiv">
+										<div >
+											<h6>Languages and Tools</h6>
+											<ul>
+												<li>Python</li>
+												<ul>
+													<li>TensorFlow</li>
+													<li>CV2</li>
+												</ul>
+												<li>HTML</li>
+												<li>JS</li>
+												
+											</ul>
+										</div>
+										<div class="cardtext">
+											<h6>Design and Decisions</h6>
+											<p>
+												After receiving the clip of a movie from a user, the back end feeds all frames (at 24 fps) through two DNNs. First, Yolo v3 is used to detect human faces. Those that have a high confidence are extracted from the video frames and fed through a second network where the face is classified. To avoid training from scratch, transfer learning is employed by adding extra layers onto a pretrained network to ‘fine tune’ it. 										</div>
+										<div class="flipBtnDiv card-footer p-0">
 											<button type="button"
 												class="btn btn-primary float-end flipBtn">Back</button>
 										</div>
@@ -366,20 +416,26 @@
 						<form method="post" action="#">
 							<div class="row">
 								<div class="col-6 col-12-small p-3">
-									<input class="form-control text-light" type="text" name="name" id="name" placeholder="Name" style="background-color: rgb(52, 49, 49);"/>
+									<input class="form-control text-light" type="text" name="name" id="name"
+										placeholder="Name" style="background-color: rgb(52, 49, 49);" />
 								</div>
 								<div class="col-6 col-12-small p-3">
-									<input type="text" class="form-control text-light" name="email" id="email" placeholder="Email" style="background-color: rgb(52, 49, 49);"/>
+									<input type="text" class="form-control text-light" name="email" id="email"
+										placeholder="Email" style="background-color: rgb(52, 49, 49);" />
 								</div>
 								<div class="col-12 p-3">
-									<input type="text" class="form-control text-light" name="subject" id="subject" placeholder="Subject" style="background-color: rgb(52, 49, 49);"/>
+									<input type="text" class="form-control text-light" name="subject" id="subject"
+										placeholder="Subject" style="background-color: rgb(52, 49, 49);" />
 								</div>
 								<div class="col-12 p-3">
-									<textarea name="message" rows="6" class="form-control text-light" id="message" placeholder="Message" style="background-color: rgb(52, 49, 49);"></textarea>
+									<textarea name="message" rows="6" class="form-control text-light" id="message"
+										placeholder="Message" style="background-color: rgb(52, 49, 49);"></textarea>
 								</div>
 								<div class="col-12 p-3">
-									<button class="btn btn-light float-start ms-4" type="button" id="sendEmailBtn"> Send </button>
-									<button class="btn btn-light float-end me-4" type="reset" value="Clear Form" class="alt">clear</button>
+									<button class="btn btn-light float-start ms-4" type="button" id="sendEmailBtn"> Send
+									</button>
+									<button class="btn btn-light float-end me-4" type="reset" value="Clear Form"
+										class="alt">clear</button>
 								</div>
 							</div>
 						</form>
@@ -391,18 +447,18 @@
 							<div class="col-sm-1 rounded">
 								<div class="p-2 d-flex justify-content-center">
 									<a href="https://www.linkedin.com/in/kirk-vander-ploeg-b60186153" target="_blank">
-										<img  class="img-fluid" src="images/img_icon/linkedIn.png"/>
+										<img class="img-fluid" src="images/img_icon/linkedIn.png" />
 									</a>
 								</div>
 							</div>
 							<div class="col-sm-1 rounded ">
 								<div class="p-2 d-flex justify-content-center">
 									<a href="https://github.com/Kirk-V" target="_blank">
-									<img class="img-fluid" src="images/img_icon/github.png"/>
-								</a>
+										<img class="img-fluid" src="images/img_icon/github.png" />
+									</a>
 								</div>
 							</div>
-						</div>	
+						</div>
 						<hr />
 					</div>
 				</div>
