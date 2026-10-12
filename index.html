@@ -1,487 +1,168 @@
 <!DOCTYPE html>
-<html class="h-100 w-100">
-
+<html lang="en">
 <head>
-	<title>Kirk Vander Ploeg</title>
 	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<!-- <link rel="stylesheet" href="assets/css/main.css" /> -->
-	<link rel="stylesheet" href="assets/css/all.css" />
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Kirk Vander Ploeg | Backend &amp; Platform Software Engineer</title>
+	<meta name="description" content="Kirk Vander Ploeg is a software engineer focused on Go, Kubernetes, backend infrastructure, and distributed systems. Explore production engineering work and autonomous-systems research." />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Kirk Vander Ploeg | Backend &amp; Platform Software Engineer" />
+	<meta property="og:description" content="Backend and platform engineering in Go. Kubernetes operators, API infrastructure, distributed systems, and a research background in autonomous navigation." />
+	<meta property="og:locale" content="en_CA" />
+	<meta name="twitter:card" content="summary" />
+	<link rel="stylesheet" href="assets/css/portfolio.css?v=20261012-6" />
 </head>
+<body>
+	<a class="skip-link" href="#main">Skip to content</a>
+	<header class="site-header">
+		<div class="header-inner container">
+			<a class="brand" href="#top">Kirk <span class="last-name">Vander Ploeg</span><span class="brand-dot" aria-hidden="true">.</span></a>
+			<nav class="nav-links" aria-label="Primary navigation">
+				<a href="#work">Work</a>
+				<a href="#experience">Experience</a>
+				<a href="#skills">Skills</a>
+				<a href="#about">About</a>
+				<a href="#contact">Contact <span aria-hidden="true">↗</span></a>
+			</nav>
+		</div>
+	</header>
 
-<body class="h-100 w-100">
-	<div class="container-fluid m-0 p-0 h-100 w-100" style="scroll-snap-type: y mandatory; overflow-y: scroll;">
-		<!-- Nav -->
-		<nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top" style="height: 4%" id="nav">
-			<div class="container-fluid">
-				<div class="collapse navbar-collapse justify-content-center">
-					<div class="navbar-nav mb-2 mb-lg-0">
-						<a class="nav-link" href="#top">Top</a>
-						<a class="nav-link" href="#work">Work</a>
-						<a class="nav-link" href="#portfolio">Portfolio</a>
-						<a class="nav-link" href="#contact">Contact</a>
+	<main id="main">
+		<section id="top" class="hero container" aria-labelledby="hero-title">
+			<div class="identity">
+				<span class="hero-portrait"><img src="images/kirk.jpg" alt="Kirk Vander Ploeg" decoding="async" /></span>
+				<div>
+					<p class="eyebrow">Software Engineer</p>
+					<h1 id="hero-title">Kirk <span class="last-name">Vander Ploeg</span></h1>
+				</div>
+			</div>
+			<div class="hero-body">
+				<div>
+					<p class="hero-focus">Backend &amp; platform engineering.</p>
+					<p class="hero-stack">Go <span aria-hidden="true">/</span> Java <span aria-hidden="true">/</span> Python</p>
+				</div>
+				<div class="hero-intro">
+					<p class="lede">I build backend and platform systems in Go, with a focus on Kubernetes, distributed systems, and API infrastructure.</p>
+					<p>I work across design, deployment, and operation—making configuration manageable and systems easier to maintain and recover.</p>
+					<div class="hero-actions">
+						<a class="button primary" href="#work">View selected work <span aria-hidden="true">↓</span></a>
+					</div>
+					<div class="text-links" aria-label="Contact and professional profiles">
+						<a href="mailto:kvande85@uwo.ca">Email me <span aria-hidden="true">↗</span></a>
+						<a href="https://www.linkedin.com/in/kirk-vander-ploeg-b60186153">LinkedIn <span aria-hidden="true">↗</span></a>
+						<a href="https://github.com/Kirk-V">GitHub <span aria-hidden="true">↗</span></a>
 					</div>
 				</div>
 			</div>
-		</nav>
+		</section>
 
-		<!-- Home -->
-		<article id="top" class="d-flex wrapper style1 bg-dark text-bg-dark h-100 w-100 pt-5"
-			style="scroll-snap-align: start;">
-			<div class="container mt-5 mb-5 mh-75">
-				<div class="row mt-5 mb-5">
-					<div class="col-4 d-none d-sm-inline">
-						<img class="img-fluid rounded" src="images/kirk.jpg" alt="" />
+		<section id="work" class="section container" aria-labelledby="work-title">
+			<div class="section-heading">
+				<div><p class="eyebrow">01 / Selected work</p><h2 id="work-title">Systems I’ve worked on.</h2></div>
+				<p>Production infrastructure, backend services, and earlier work in application development and autonomous systems.</p>
+			</div>
+			<span id="projects" class="anchor-alias" aria-hidden="true"></span>
+			<article id="operator" class="featured-case" aria-labelledby="operator-title">
+				<div class="featured-header"><p class="project-type">J.D. Power / Platform engineering</p></div>
+				<div class="featured-body">
+					<div class="case-intro">
+						<h3 id="operator-title">A Go operator for API infrastructure</h3>
+						<p class="case-lede">Declarative routing, domains, environments, and access policies for 200+ APIs across four production Kubernetes clusters.</p>
+						<div class="system-model" aria-label="High-level reconciliation model">
+							<p class="diagram-label">Reconciliation model</p>
+							<ol><li>Custom resources</li><li>Go controller</li><li>API configuration</li></ol>
+						</div>
+						<p class="stack">Go · Kubernetes · Operator SDK · controller-runtime · CRDs · Tyk API Gateway</p>
 					</div>
-					<!-- </div>
-					<div class="d-none d-md-block col-md-4">
-						<span class="img-thumbnail"><img src="images/kirk.jpg" alt="" /></span>
-					</div> -->
-					<div class="col-md-6">
-						<header>
-							<h1 style="color: aqua">
-								Hi. I'm
-								<strong style="color: aqua">Kirk Vander Ploeg</strong>.
-							</h1>
-						</header>
-						<p>
-							<strong class="text-bg-dark m-0 fs-4">Software Developer</strong>
-						</p>
-						<p class="text-bg-dark m-0 fs-6">
-							MSc. Computer Science
-						</p>
-						<p class="text-bg-dark m-0 fs-6">
-							BSc. Computer Science
-						</p>
-						<p class="lead mt-4" style="color: aqua">
-							After recently completing a Masters Degree in computer science,
-							I am eager to contribute to a software engineering team. My
-							experience spans the complete software development lifecycle.
-						</p>
-						<a href="#work" class="btn large scrolly bg-body text-bg-info noShadowText">Learn about what I
-							do</a>
-
+					<div class="case-detail">
+						<div><h4>Why an operator</h4><p>API configuration needed a consistent model across multiple production clusters, alongside a migration from NGINX-based API ingress toward Tyk API Gateway. Custom resources made that configuration declarative.</p></div>
+						<div><h4>Controller design</h4><p>I implemented idempotent reconciliation, dependency watches, retries, error handling, and lifecycle management to handle configuration changes and failure recovery.</p></div>
+						<div><h4>From prototype to production</h4><p>Developed the operator from proof of concept and CRD design through production rollout and team onboarding. Continued development focuses on reliability and operational automation.</p></div>
 					</div>
 				</div>
+			</article>
 
-				<div class="row d-none d-md-flex h-25 align-items-end justify-content-center mb-auto">
-					<div class="col-sm-1 rounded">
-						<div class="bg-light p-2">
-							<img class="img-fluid bg-light" src="images/img_icon/jquery.png" />
-						</div>
-					</div>
-					<div class="col-sm-1">
-						<img class="img-fluid" src="images/img_icon/bootstrap.png" />
-					</div>
-					<div class="col-sm-1">
-						<img class="img-fluid" src="images/img_icon/csharp.svg" />
-					</div>
-					<div class="col-sm-1">
-						<img class="img-fluid" src="images/img_icon/html5.webp" />
-					</div>
-					<div class="col-sm-1">
-						<img class="img-fluid" src="images/img_icon/python.svg" />
-					</div>
-					<div class="col-sm-1">
-						<img class="img-fluid" src="images/img_icon/react.png" />
-					</div>
-					<div class="col-sm-1">
-						<img class="img-fluid" src="images/img_icon/sql.png" />
-					</div>
-					<div class="col-sm-1">
-						<img class="img-fluid" src="images/img_icon/php.png" />
-					</div>
-					<div class="col-sm-1">
-						<img class="img-fluid" src="images/img_icon/dotnetcore.png" />
-					</div>
-					<div class="col-sm-1">
-						<img class="img-fluid" src="images/img_icon/js.png" />
-					</div>
-					<div class="col-sm-1">
-						<img class="img-fluid" src="images/img_icon/perl.png" />
-					</div>
-					<div class="col-sm-1">
-						<img class="img-fluid rounded" src="images/img_icon/c.png" />
-					</div>
+			<div class="project-grid">
+				<article class="project-card">
+					<p class="project-type">J.D. Power / Backend engineering</p>
+					<h3>Event-driven backend systems</h3>
+					<p>Developed Go services and event-driven pipelines for systems supporting dealership, OEM, and consumer-facing applications.</p>
+					<p>Worked with messaging, search, and caching infrastructure, alongside production reliability and failure recovery.</p>
+					<p class="stack">Go · Kafka · RabbitMQ · Elasticsearch · Redis</p>
+				</article>
+				<article class="project-card">
+					<p class="project-type">J.D. Power / Platform automation</p>
+					<h3>Kubernetes delivery workflows</h3>
+					<p>Built and maintained GitLab CI/CD workflows for service and infrastructure deployment using Kustomize, Helm, and Docker.</p>
+					<p>Used Python to automate engineering and operational tasks, making deployment and configuration work repeatable.</p>
+					<p class="stack">GitLab CI/CD · Kubernetes · Kustomize · Helm · Docker · Python</p>
+				</article>
+				<article class="project-card">
+					<p class="project-type">Western University / Application development</p>
+					<h3>Building access administration</h3>
+					<p>Built a C#/WPF application supporting building-access workflows for more than 10,000 users, backed by Active Directory.</p>
+					<p>Owned delivery from requirements through production, working directly with stakeholders to replace manual operational processes.</p>
+					<p class="stack">C# · WPF · Active Directory</p>
+				</article>
+				<article class="project-card research-card">
+					<p class="project-type">Western University / MSc research</p>
+					<h3>Autonomous UAV navigation</h3>
+					<p>Developed navigation and real-time decision-making software in C and Python, with algorithms designed for resource-constrained onboard computation.</p>
+					<p>Research explored autonomous operation in constrained environments and reached academic, industry, and media audiences, including BBC Earth and CBC Radio.</p>
+					<details><summary>Watch the research demonstration <span aria-hidden="true">↗</span></summary><video controls playsinline preload="none" aria-label="Autonomous UAV research demonstration"><source src="images/drone.mp4" type="video/mp4" /><p>Your browser does not support embedded video. <a href="images/drone.mp4">Download the research demonstration.</a></p></video></details>
+					<p class="stack">C · Python · Real-time systems · Autonomous navigation</p>
+				</article>
+			</div>
+		</section>
+
+		<section id="experience" class="section section-tint" aria-labelledby="experience-title">
+			<div class="container split-section">
+				<div class="section-intro"><p class="eyebrow">02 / Professional background</p><h2 id="experience-title">Experience.</h2><p>From research and end-to-end application delivery to backend and platform engineering.</p></div>
+				<div class="timeline">
+					<article>
+						<div class="job-heading"><div><h3>J.D. Power</h3><p class="job-title">Software Development Engineer</p></div><p class="date">2023–Present</p></div>
+						<p>Backend services, Kubernetes automation, and API infrastructure. My work spans system design, service development, production rollout, and operational support.</p>
+					</article>
+					<article>
+						<div class="job-heading"><div><h3>Western University</h3><p class="job-title">Software Developer</p></div><p class="date">Through 2023</p></div>
+						<p>Owned internal and user-facing software, re-architected legacy systems, and automated network, account-management, and administrative workflows.</p>
+					</article>
+					<article>
+						<div class="job-heading"><div><h3>Western University</h3><p class="job-title">Research Assistant</p></div><p class="date">2020–2022</p></div>
+						<p>Autonomous UAV navigation and real-time systems research, connecting algorithm design with the constraints of onboard execution.</p>
+					</article>
+					<p class="teaching"><strong>Graduate Teaching Assistant · 2018–2022</strong><br />Supported upper-year and graduate Computer Science courses in Network Security, Programming Languages, Web Development, and Software Architecture.</p>
 				</div>
 			</div>
-		</article>
+		</section>
 
-		<!-- Work -->
-		<article id="work" class="wrapper style2 pt-5"
-			style="scroll-snap-align: start; background-color: rgb(211, 207, 203); min-height: 100%;">
-			<div class="container h-100">
-				<div class="row justify-content-center mb-3">
-					<div class="col-md-12 justify-content-center">
-						<h2 class="text-center">Here's what I'm working on each day</h2>
-					</div>
-				</div>
-				<div class="row float-end justify-content-end mb-4 h-25 w-100">
-					<div class="col-sm-2 p-4 d-none d-md-block">
-						<img class="img-fluid" src="images/img_icon/Stacked.png" />
-					</div>
-					<div class="col-12 col-md-10 pt-4" style="border: 5px solid black; border-radius: 10px;">
-						<div class="row">
-							<div class="col-sm-4">
-								<h4 class="text-center">
-									Faculty of Social Science Software Development
-								</h4>
-							</div>
-							<div class="col-sm-8">
-								<p>
-									As the head programmer for SSTS, I am continously working to
-									improve existing software infastructure across a faculty of
-									over 10 000 individuals. Each day I collaborate with
-									stakeholders to design and develop applications to serve faculty needs. 
-									I also focus on extended existing web applications that are in place to organize network and financial administrative needs across many departments. 
-									Additionally, I help design and deploy research project and departmental websites hosted on Windows Server IIs. 
-									 
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="row justify-content-end w-100 h-25 mb-4">
-					<div class="col-12 col-sm-12 col-md-10 pt-4" style="border: 5px solid rgb(5, 80, 34);border-radius: 10px;">
-						<div class="row">
-							<div class="col-sm-8 order-1">
-								<p>
-									In my spare time, I supervise and support student researchers developing novel ways in which we can leverage autonomous UAV technology in connectionless environments. We accomplish this by creating fully autonomous positioning, mapping, and exploration algorithms capable of running on-board very resource depleted systems such as Micro Ariel Vehicles. After building these designs we load them on micro-UAVs which we deploy in real-world test beds at WING research Labs in Western University.
-								</p>
-							</div>
-							<div class="col-sm-4 text-center overflow-auto order-sm-1">
-								<h4>Connectionless Drone Exploration</h4>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-2 p-4 d-none d-md-block">
-						<img class="img-fluid" src="images/img_icon/uav.png" />
-					</div>
-				</div>
-
-				<div class="row float-end justify-content-end mb-4 h-25 w-100">
-					<div class="col-sm-2 p-4 d-none d-md-block">
-						<!-- img -->
-					</div>
-					<div class="col-12 col-sm-12 col-md-10" style="border: 5px solid #500505;border-radius: 10px;">
-						<div class="row">
-							<div class="col-sm-4">
-								<h4>Client Support</h4>
-							</div>
-							<div class="col-sm-8">
-								<p>
-									With a background in providing technical advice to both
-									students and colleagues, I am often approached to help users
-									set-up software solutions, identifying their needs and
-									providing guidance on how to "take the next step".
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="row justify-content-center w-100">
-					<div class="col-sm-4">
-						<a href="#portfolio" class="btn bt-dark text-bg-dark large scrolly">Recent Work</a>
-					</div>
-				</div>
+		<section id="skills" class="section container" aria-labelledby="skills-title">
+			<div class="section-heading"><div><p class="eyebrow">03 / Technical focus</p><h2 id="skills-title">Backend &amp; platform stack.</h2></div><p>My current work centers on Go and Kubernetes, with Java for backend development and Python for engineering and automation.</p></div>
+			<div class="core-skills" aria-label="Current languages">
+				<div><h3>Go</h3><p>Backend services &amp; Kubernetes operators</p></div>
+				<div><h3>Java</h3><p>Backend development</p></div>
+				<div><h3>Python</h3><p>Engineering &amp; operational automation</p></div>
 			</div>
-		</article>
-
-		<!-- Portfolio -->
-		<article id="portfolio" class="wrapper style3 h-100 pt-5 overflow-auto"
-			style="background-color: #030111; scroll-snap-align: start;">
-			<div class="container h-100">
-				<header>
-					<h2 class="text-light">Here’s what I've been working on recently.</h2>
-					<p class="noShadowText text-light">
-						A collection of ongoing/recently completed projects
-					</p>
-				</header>
-				<div class="row equal h-75">
-
-
-					<!-- card 1 -->
-					<div class="col-sm-12 col-md-6 col-lg-4 pb-4  flip">
-						<div class="card border-light text-bg-dark h-100 border border-2">
-							<h5 class="card-header card-title">Chubb Hub</h5>
-							<div class="flipCard h-100">
-								<div class="face front h-100 w-100">
-									<div class="card-body h-100 bg-black">
-										<div id="carouselExampleControls" class="carousel h-50"
-											data-bs-interval="false">
-											<div class="carousel-inner h-100 mh-100">
-												<div class="carousel-item active h-100">
-													<img class="card-img" src="images/chubb3.PNG" class="h-100"
-														alt="..." />
-												</div>
-												<div class="carousel-item mh-100">
-													<img class="card-img" src="images/chubb1.PNG" alt="..." />
-												</div>
-												<div class="carousel-item mh-100">
-													<img class="card-img" src="images/chubb2.PNG" alt="..." />
-												</div>
-											</div>
-											<button class="carousel-control-prev carouselControlBtn" type="button"
-												data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Previous</span>
-											</button>
-											<button class="carousel-control-next carouselControlBtn" type="button"
-												data-bs-target="#carouselExampleControls" data-bs-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Next</span>
-											</button>
-										</div>
-										<div class="cardtext text-light" style="max-height: 50%;">Building security is
-											at the forefront of concerns for SSTS
-											staff who manage security access to multiple buildings. Chubb Hub was developed to replace time-consuming manual
-											management of security groups and settings with a speedy, intuitive desktop app. Chubb hub has
-											enabled quick management of thousands of users, integrating with the
-											standard UWO security system.
-										</div>
-										<div class="flipBtnDiv card-footer pe-0 mt-auto">
-											<button type="button" class="btn btn-primary  float-end flipBtn">
-												How It's Made
-											</button>
-										</div>
-									</div>
-								</div>
-								<div class="face back h-100 w-100">
-									<div class="card-body bg-black h-100">
-										<div style="height: 35%;">
-											<h6>Languages and Tools</h6>
-											<ul>
-												<li>C#</li>
-												<li>XAML</li>
-												<li>Dotnet core 6</li>
-												<li>WPF</li>
-												<li>MVVM</li>
-											</ul>
-										</div>
-										<div class="cardtext">
-											<h6>Design Decisions</h6>
-											<p>
-												As the need was for a dekstop application, WPF was an appropriate choice. This application is designed with the MVVM pattern. The architecture allows for incremental improvements and future modification which is a requirement of the project. The object oriented back-end is devouple from the front end by using bindings in a view-model layer.
-											</p>
-										</div>
-										<div class="flipBtnDiv card-footer p-0 mt-auto">
-											<button type="button"
-												class="btn btn-primary float-end flipBtn">Back</button>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-
-					<!-- card 2 -->
-					<div class="col-sm-12 col-md-6 col-lg-4 pb-4 flip">
-						<div class="card border-light text-bg-dark h-100 border border-2">
-							<h5 class="card-header card-title">Autonomous Exploration</h5>
-							<div class="flipCard h-100">
-								<div class="face front h-100 w-100">
-									<div class="card-body h-100 bg-black">
-										<div class="h-50"><video class="card-img" autoplay muted loop id="myVideo"
-												width="100%" height="100%">
-												<source src="images/drone.mp4" type="video/mp4" />
-											</video></div>
-										<div class="cardtext">
-											This application allows micro-UAVs to venture into confined, underground areas without any previous knowledge of the environment. Without any need for external positioning information, like GPS, this system is truly autonomous and can be deployed anywhere.
-										</div>
-										<div class="cardtext mt-2">
-											<li>Featured on <a href="https://mobilesyrup.com/2022/08/25/5g-and-the-future-of-drones/?fbclid=IwAR0rbeJas-PG_IDHfTLBUjkxHi2_MMbft_67j5fqN3qZNGUQqqPi0elV6oo">BBC Earth</a></div></li>
-										<div class="flipBtnDiv card-footer p-0 mt-auto">
-											<button type="button" class="btn btn-primary float-end flipBtn">How It's
-												Made</button>
-										</div>
-									</div>
-								</div>
-								<div class="face back h-100 w-100">
-									<div class="card-body h-100 bg-black">
-										<div >
-											<h6>Languages and Tools</h6>
-											<ul>
-												<li>C</li>
-												<li>Python (pyqt)</li>
-												<li>Crazyflie</li>
-												<li>FreeRtos</li>
-											</ul>
-										</div>
-										<div class="cardtext">
-											<h6>Design and Decisions</h6>
-											<p>
-												To make this system autonomous, it is embedded within the firmware of a CrazyFlie quadcopter. When the application starts a memory efficient mapping and frontier detection system are combined to encourage the UAV to explore by travelling to regions of space yet to be explored. The map provides a way to track where the drone has already been and provides paths to new areas yet to be explored. Frontier detection is responsible for discovering regions that the drone must fly to in order to continue exploration.											</p>
-										</div>
-										<div class="flipBtnDiv card-footer p-0 mt-auto">
-											<button type="button"
-												class="btn btn-primary float-end flipBtn">Back</button>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-
-					<!-- card 3 -->
-					<div class="col-sm-12 col-md-6 col-lg-4 pb-4 flip">
-						<div class="card border-light text-bg-dark h-100 border border-2">
-							<h5 class="card-header card-title">Movie Star Classifier</h5>
-							<div class="flipCard h-100">
-								<div class="face front h-100 w-100">
-									<div class="card-body h-100 bg-black">
-										<div id="MLCarousel" class="carousel h-50" data-bs-interval="false">
-											<div class="carousel-inner d-flex align-items-center h-100 mh-100">
-												<div class="carousel-item  active ">
-													<img class="card-img float-end" src="images/ml_2.png" class="h-100"
-														alt="..." />
-												</div>
-												<div class="carousel-item ">
-													<img class="card-img" src="images/ml_1.png" alt="..." />
-												</div>
-											</div>
-											<button class="carousel-control-prev carouselControlBtn" type="button"
-												data-bs-target="#MLCarousel" data-bs-slide="prev">
-												<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Previous</span>
-											</button>
-											<button class="carousel-control-next carouselControlBtn" type="button"
-												data-bs-target="#MLCarousel" data-bs-slide="next">
-												<span class="carousel-control-next-icon" aria-hidden="true"></span>
-												<span class="visually-hidden">Next</span>
-											</button>
-										</div>
-										<div class="cardtext">
-											Movie star classifier is a Web-based tool to classify movie stars within a
-											user uploaded scene of a movie. After selecting a scene the frames are analyzed by
-											the back end running through two deep neural networks to first detect faces and then to classify them.
-											
-										</div>
-										<div class="flipBtnDiv card-footer p-0">
-											<button type="button" class="btn btn-primary float-end flipBtn">How It's
-												Made</button>
-										</div>
-									</div>
-								</div>
-								<div class="face back h-100 w-100">
-									<div class="card-body h-100 bg-black">
-										<div >
-											<h6>Languages and Tools</h6>
-											<ul>
-												<li>Python</li>
-												<ul>
-													<li>TensorFlow</li>
-													<li>CV2</li>
-												</ul>
-												<li>HTML</li>
-												<li>JS</li>
-												
-											</ul>
-										</div>
-										<div class="cardtext">
-											<h6>Design and Decisions</h6>
-											<p>
-												After receiving the clip of a movie from a user, the back end feeds all frames (at 24 fps) through two DNNs. First, Yolo v3 is used to detect human faces. Those that have a high confidence are extracted from the video frames and fed through a second network where the face is classified. To avoid training from scratch, transfer learning is employed by adding extra layers onto a pretrained network to ‘fine tune’ it. 										</div>
-										<div class="flipBtnDiv card-footer p-0">
-											<button type="button"
-												class="btn btn-primary float-end flipBtn">Back</button>
-										</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-					</div>
-				</div>
-				<!-- <footer>
-					<a href="#contact" class="btn btn-light">Get in touch with me</a>
-				</footer> -->
+			<div class="skill-grid">
+				<div><h3>Kubernetes &amp; delivery</h3><p>Operator SDK, controller-runtime, CRDs, Kustomize, Helm, Docker, GitLab CI/CD</p></div>
+				<div><h3>Distributed systems &amp; data</h3><p>Kafka, RabbitMQ, Elasticsearch, Redis, event-driven systems, microservices</p></div>
+				<div><h3>API infrastructure</h3><p>REST APIs, Tyk API Gateway, Kubernetes Services, EndpointSlices, Ingress</p></div>
 			</div>
-		</article>
+			<p class="previous-stack"><strong>Earlier application &amp; research experience</strong><br />TypeScript / JavaScript, React, C#, WPF, SQL, PHP, Perl, C</p>
+		</section>
 
-		<!-- Contact -->
-		<article id="contact" class=" pt-5"
-			style="background-color: #754242; scroll-snap-align: start; min-height: 100%;">
-			<div class="container justify-content-center">
-				<header>
-					<h2 class="text-light text-center mt-5">Please email me to discuss my future at your company.</h2>
-				</header>
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-6">
-						<form method="post" action="#">
-							<div class="row">
-								<div class="col-6 col-12-small p-3">
-									<input class="form-control text-light" type="text" name="name" id="name"
-										placeholder="Name" style="background-color: rgb(52, 49, 49);" />
-								</div>
-								<div class="col-6 col-12-small p-3">
-									<input type="text" class="form-control text-light" name="email" id="email"
-										placeholder="Email" style="background-color: rgb(52, 49, 49);" />
-								</div>
-								<div class="col-12 p-3">
-									<input type="text" class="form-control text-light" name="subject" id="subject"
-										placeholder="Subject" style="background-color: rgb(52, 49, 49);" />
-								</div>
-								<div class="col-12 p-3">
-									<textarea name="message" rows="6" class="form-control text-light" id="message"
-										placeholder="Message" style="background-color: rgb(52, 49, 49);"></textarea>
-								</div>
-								<div class="col-12 p-3">
-									<button class="btn btn-light float-start ms-4" type="button" id="sendEmailBtn"> Send
-									</button>
-									<button class="btn btn-light float-end me-4" type="reset" value="Clear Form"
-										class="alt">clear</button>
-								</div>
-							</div>
-						</form>
-					</div>
-					<div class="col-12">
-						<hr />
-						<h3 class="text-light">Find me on ...</h3>
-						<div class="row w-100 justify-content-center m-0 mb-auto">
-							<div class="col-sm-1 rounded">
-								<div class="p-2 d-flex justify-content-center">
-									<a href="https://www.linkedin.com/in/kirk-vander-ploeg-b60186153" target="_blank">
-										<img class="img-fluid" src="images/img_icon/linkedIn.png" />
-									</a>
-								</div>
-							</div>
-							<div class="col-sm-1 rounded ">
-								<div class="p-2 d-flex justify-content-center">
-									<a href="https://github.com/Kirk-V" target="_blank">
-										<img class="img-fluid" src="images/img_icon/github.png" />
-									</a>
-								</div>
-							</div>
-						</div>
-						<hr />
-					</div>
-				</div>
+		<section id="about" class="section section-tint" aria-labelledby="about-title">
+			<div class="container about-layout">
+				<div class="about-copy"><p class="eyebrow">04 / About</p><h2 id="about-title">A little background.</h2><p>I started in autonomous-systems research, writing navigation software that had to make decisions in real time on limited hardware. That work gave me a grounding in algorithms and the practical constraints of running software.</p><p>At Western University, I moved into building applications and working directly with the people who used them. Today, at J.D. Power, I work on backend services and Kubernetes infrastructure.</p><p>I like work that connects system design with the realities of production: clear configuration, repeatable deployments, and recovery when things fail.</p></div>
+				<aside class="education" aria-labelledby="education-title"><p class="eyebrow" id="education-title">Education</p><p class="university">Western University</p><div><h3>Master of Science</h3><p>Computer Science</p><p class="education-detail">Autonomous UAV navigation &amp; real-time systems</p></div><div><h3>Bachelor’s degree</h3><p>Computer Science</p><p class="education-detail">Honours Specialization in Computer Science<br />Minor in Software Engineering</p></div></aside>
 			</div>
-		</article>
+		</section>
 
-		<!-- Scripts -->
-		<!-- <script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script> !-->
-		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-			integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-			crossorigin="anonymous"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-			crossorigin="anonymous"></script>
-		<script src="assets/js/main.js"></script>
-	</div>
+		<section id="contact" class="section container contact-section" aria-labelledby="contact-title">
+			<div><p class="eyebrow">05 / Contact</p><h2 id="contact-title">Get in touch.</h2><p>For backend, distributed systems, Kubernetes, and platform engineering opportunities, reach me by email or LinkedIn.</p></div>
+			<div class="contact-links"><a class="contact-email" href="mailto:kvande85@uwo.ca"><span>kvande85@uwo.ca</span><span aria-hidden="true">↗</span></a><div class="text-links"><a href="https://www.linkedin.com/in/kirk-vander-ploeg-b60186153">LinkedIn <span aria-hidden="true">↗</span></a><a href="https://github.com/Kirk-V">GitHub <span aria-hidden="true">↗</span></a></div></div>
+		</section>
+	</main>
+	<footer class="site-footer container"><span>&copy; 2026 Kirk Vander Ploeg</span><a href="#top">Back to top <span aria-hidden="true">↑</span></a></footer>
 </body>
-
 </html>
